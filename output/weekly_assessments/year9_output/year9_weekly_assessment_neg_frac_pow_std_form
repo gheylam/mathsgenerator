@@ -1,0 +1,113 @@
+\documentclass[12pt]{article}
+\usepackage{geometry}
+\geometry{
+a4paper,
+top=40mm,
+left=20mm,
+right=20mm,
+}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\begin{document}
+\pagestyle{fancy}
+\fancyhead[L]{\textbf{Name:}}
+\fancyhead[C]{\textbf{Date:\hspace{2cm}}}
+\fancyhead[R]{\textbf{Mark:\hspace{2cm}}}
+\fancyfoot{} 
+\section{Negative numbers}
+Find the value of the following expressions. When dividing, leave your answer to 1 decimal place.
+\begin{table}[h!]
+\centering
+\begin{tabular}{c c c}
+\hspace{5cm} & \hspace{5cm} & \hspace{5cm} \\
+a) ${-4} + {-19}$ & b) ${-10} + {-17}$ & c) ${-179} + {-87}$ \\ \\
+d) ${-10} - {-13}$ & e) ${-10} - {-22}$ & f) ${-105} - {-122}$ \\ \\
+g) ${-2}\times{-10}$ & h) ${-4}\times{-1}$ & i) ${-55}\times{8}$ \\ \\
+j) ${-7}\div{4}$ & k) ${-9}\div{-12}$ & l) ${-138}\div{9}$ \\ \\
+\end{tabular}
+\end{table}
+\newline
+\section{Fractions}
+Simplifying the following expression leaving your answer in their simplest form:
+\begin{table}[h!]
+\centering
+\begin{tabular}{c c c c}
+\hspace{4cm} & \hspace{4cm} & \hspace{4cm} & \hspace{4cm}\\
+a) $\frac{{3}}{{9}} + \frac{{2}}{{2}}$ & b) $\frac{{4}}{{7}} + \frac{{-9}}{{5}}$ & c) $\frac{{4}}{{6}} - \frac{{9}}{{8}}$ & d) $\frac{{0}}{{-10}} - \frac{{-2}}{{9}}$ \\ \\
+e) $\frac{{2}}{{10}}\times\frac{{10}}{{9}}$ & f) $\frac{{-5}}{{-3}}\times\frac{{0}}{{5}}$ & g) $\frac{{3}}{{8}}\div\frac{{1}}{{4}}$ & h) $\frac{{10}}{{9}}\div\frac{{6}}{{10}}$ \\ \\
+\end{tabular}
+\end{table}
+\newline
+Order the following lists of fractions from smallest to largest:
+\begin{table}[h!]
+\centering
+\begin{tabular}{c}
+\hspace{4cm}\\
+a) $\frac{6}{36}, \frac{49}{84}, \frac{99}{132}$\\ \\
+b) $\frac{25}{35}, \frac{9}{21}, \frac{80}{70}$\\ \\
+b) $\frac{63}{7}, \frac{121}{11}, \frac{72}{6}, \frac{6}{2}, \frac{27}{3}$\\ \\
+\end{tabular}
+\end{table}
+\newline
+\newpage
+\section{Power rules}
+Keeping the answer in power form, simplify the following expression:
+\begin{table}[h!]
+\centering
+\begin{tabular}{c c c}
+\hspace{5cm} & \hspace{5cm} & \hspace{5cm} \\
+a) ${5}^{8}\times{5}^{3}$ & b) ${9}^{-4}\times{9}^{-2}$ & c) ${7}^{-7}\times{7}^{-1}$ \\ \\
+d) ${2}^{4}\div{2}^{5}$ & e) ${6}^{-4}\div{6}^{-4}$ & f) ${5}^{-8}\div{5}^{-3}$ \\ \\
+g) $({6}^{10})^{4}$ & h) $({6}^{2})^{-7}$ & i) $({-419})^1$ \\ \\
+\end{tabular}
+\end{table}
+\newline
+Simplify the following expression into fractions. Fully simplify your answer where possible:
+\begin{table}[h!]
+\centering
+\begin{tabular}{c c c}
+\hspace{5cm} & \hspace{5cm} & \hspace{5cm} \\
+a) ${5}^{-2}$ & b) ${2}^{-1}\times{2}^{-3}$ & c) ${2}^{-3} - {2}^{-3}$ \\ \\
+\end{tabular}
+\end{table}
+\newline
+Rewrite the following expressions into surds:
+\begin{table}[h!]
+\centering
+\begin{tabular}{c c c}
+\hspace{5cm} & \hspace{5cm} & \hspace{5cm} \\
+a) ${64}^\frac{1}{{3}}$ & b) ${9}^\frac{1}{{3}}$ & c) ${81}^\frac{1}{{2}}$ \\ \\
+\end{tabular}
+\end{table}
+\newline
+\newpage
+\section{Standard Form}
+Convert the following ordinary numbers to standard form:
+\begin{table}[h!]
+\centering
+\begin{tabular}{c c c c}
+\hspace{2cm} & \hspace{5cm} & \hspace{5cm} & \hspace{4cm}\\
+a) $45670000$ & b) $44620000$ & c) $0.00276$ & d) $0.0979$\\ \\
+\end{tabular}
+\end{table}
+\newline
+Convert the following standard form numbers to ordinary numbers:
+\begin{table}[h!]
+\centering
+\begin{tabular}{c c c c}
+\hspace{2cm} & \hspace{5cm} & \hspace{5cm} & \hspace{4cm}\\
+a) $2.58634\times10^6$ & b) $7.74951\times10^7$ & c) $2.12561\times10^{-4}$ & d) $5.94359\times10^{-4}$\\ \\
+\end{tabular}
+\end{table}
+\newline
+Simplify the following expression into the form $A\times10^n$:
+\begin{table}[h!]
+\centering
+\begin{tabular}{c c}
+\hspace{5cm} & \hspace{5cm}\\
+a) $3.17247\times10^{10} + 1.81240\times10^{12}$ & b) $1.11390\times10^{7} - 5.34231\times10^{10}$\\ \\
+c) $1.1218\times10^{7}\times2.11567\times10^{7}$ & d) $8.1906\times10^{15}\div3.59629\times10^{14}$\\ \\
+\end{tabular}
+\end{table}
+\newline
+\end{document}

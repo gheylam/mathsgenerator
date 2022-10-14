@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "Maths_Generator"
+version = "0.1.0"
+description = ""
+authors = ["gheylam <tszheylam@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numpy = "^1.23.3"
+vedo = "^2022.3.0"
+PyLaTeX = "^1.4.1"
+matplotlib = "^3.5.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
