@@ -11,6 +11,7 @@ import numpy as np
 class Frac_Perc_Deci_Generator:
     def __init__(self, doc):
         self.doc = doc
+        doc.add_section("Fractions, Percentages and Decimals")
 
     def gen_q_fraction_to_percentage_easy(self):
         divisor_of_100 = [1, 2, 5, 10, 20, 25, 50]
@@ -51,7 +52,7 @@ class Frac_Perc_Deci_Generator:
             percentage = num 
         else:
             percentage = num * 10
-        return f"${percentage}%$"
+        return f"${percentage}\%$"
 
     def gen_q_percentage_operators(self, percentage_scalar=-1):
         num = random.randint(1, 100) * 10
@@ -60,26 +61,26 @@ class Frac_Perc_Deci_Generator:
         else:
             percentage = random.randint(1, 9) * percentage_scalar
     
-        return f"${percentage}%$ of ${num}$"
+        return f"${percentage}\%$ of ${num}$"
     
     def gen_q_fraction_operators(self): 
         numerator = random.randint(1, 20)
         denominator = random.randint(1, 10)
         number = denominator * random.randint(1, 10)
         fraction = helper.gen_fraction(numerator, denominator)
-        return f"${fraction} of number"
+        return f"${fraction}$ of ${number}$"
     
 
     def gen_batch_fraction_conversion(self):
         '''
         Generate 6 questions, 3 fractions to percentages, 3 fractions to decimals 
         '''
-        q1 = gen_q_fraction_to_percentage_easy()
-        q2 = gen_q_fraction_to_percentage_easy()
-        q3 = gen_q_fraction_to_percentage_easy()
-        q4 = gen_q_fraction_to_decimal_3dp()
-        q5 = gen_q_fraction_to_decimal_3dp()
-        q6 = gen_q_fraction_to_decimal_3dp()
+        q1 = self.gen_q_fraction_to_percentage_easy()
+        q2 = self.gen_q_fraction_to_percentage_easy()
+        q3 = self.gen_q_fraction_to_percentage_easy()
+        q4 = self.gen_q_fraction_to_decimal_3dp()
+        q5 = self.gen_q_fraction_to_decimal_3dp()
+        q6 = self.gen_q_fraction_to_decimal_3dp()
         
         self.doc.add("Convert the following fractions into percentages and then convert them to decimal:")
         self.doc.add(r"\begin{table}[h!]")
@@ -107,9 +108,9 @@ class Frac_Perc_Deci_Generator:
         '''
         Generate 3 questions, 3 percentage to fractions and decimal 
         '''
-        q1 = gen_q_percentage_to_fraction()
-        q2 = gen_q_percentage_to_fraction()
-        q3 = gen_q_percentage_to_fraction()
+        q1 = self.gen_q_percentage_to_fraction()
+        q2 = self.gen_q_percentage_to_fraction()
+        q3 = self.gen_q_percentage_to_fraction()
 
         self.doc.add("Convert the following percentages into fractions and then decimals:")
         self.doc.add(r"\begin{table}[h!]")
@@ -126,13 +127,13 @@ class Frac_Perc_Deci_Generator:
         '''
         Generate 6 questions, 3 percentage operator questions, 3 fraction operator questions 
         '''
-        q1 = gen_q_percentage_operators()
-        q2 = gen_q_percentage_operators()
-        q3 = gen_q_percentage_operators()
+        q1 = self.gen_q_percentage_operators()
+        q2 = self.gen_q_percentage_operators()
+        q3 = self.gen_q_percentage_operators()
 
-        q4 = gen_q_fraction_operators()
-        q5 = gen_q_fraction_operators()
-        q6 = gen_q_fraction_operators()
+        q4 = self.gen_q_fraction_operators()
+        q5 = self.gen_q_fraction_operators()
+        q6 = self.gen_q_fraction_operators()
 
         self.doc.add("Work out the value of the following expressions :")
         self.doc.add(r"\begin{table}[h!]")

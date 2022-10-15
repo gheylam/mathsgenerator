@@ -12,12 +12,18 @@ doc.add(r"\usepackage{fancyhdr}")
 doc.add(r"\begin{document}")
 doc.add(r"\pagestyle{fancy}")
 doc.add(r"\fancyhead[L]{\textbf{Name:} \\ \textbf{Fractions homework}}")
-doc.add(r"\fancyhead[L]{\textbf{Name:}}")
-doc.add(r"\fancyhead[C]{\textbf{Date:\hspace{2cm}}}\\")
-doc.add(r"\fancyhead[R]{\textbf{Mark:\hspace{2cm}}}")
+doc.add(r"\fancyhead[C]{\textbf{Date:\hspace{2cm}} \\}")
+doc.add(r"\fancyhead[R]{\textbf{Mark:\hspace{2cm}} \\}")
 doc.add(r"\fancyfoot{} ")
 
+fpd_gen = fractions_percentages_decimals.Frac_Perc_Deci_Generator(doc)
+fpd_gen.gen_batch_fraction_conversion()
+fpd_gen.gen_batch_percentage_conversion()
+fpd_gen.gen_batch_fraction_and_percentage_operators()
+
 rounding_and_approximation.gen_section_rounding(doc)
+operators.gen_section_operators(doc)
+
 
 doc.add(r"\end{document}")
 print("Generated")

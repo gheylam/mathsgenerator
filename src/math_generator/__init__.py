@@ -9,5 +9,6 @@ __all__ = [
     "rounding_and_approximation",
     "standard_form",
     "surds",
-    "fractions_percentages_decimals"
+    "fractions_percentages_decimals",
+    "interest_rates"
 ]
