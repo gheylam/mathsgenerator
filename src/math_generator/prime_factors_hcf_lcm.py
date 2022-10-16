@@ -5,7 +5,7 @@ Created on: 04.10.2022
 Methods for generating Prime Factor, HCF and LCM math questions.
 '''
 from . import numbers_fractions_operators as helper 
-
+import random
 
 def gen_question_prime_factorisation(lower_bound=4, upper_bound=100, max_steps=5):
     num = helper.gen_prime_less_than_twenty()

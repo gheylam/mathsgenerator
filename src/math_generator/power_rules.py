@@ -5,6 +5,7 @@ Created on: 17.09.2022
 For generating power rule related maths questions.
 '''
 from . import numbers_fractions_operators as helper 
+import random 
 
 def gen_question_multiplication_rule(base_num, pow1, pow2):
     question_arr = ["$", f"{base_num}^{pow1}", r"\times", f"{base_num}^{pow2}", "$"]
@@ -43,13 +44,13 @@ def gen_question_neg_pow_frac_simplify():
     coin_toss = random.randint(1, 4)
     coin_toss2 = random.randint(0, 1)
     coin_toss3 = random.randint(0, 1)
-    base = helper.helper.gen_rnd_int_text(2, 4)
+    base = helper.gen_rnd_int_text(2, 4)
     term1 = helper.gen_term_pow(base, helper.gen_rnd_int_text(-3, -1))
 
     if coin_toss2 == 0:
         term2 = helper.gen_term_pow(base, helper.gen_rnd_int_text(-3, -1))
     else:
-        term2 = helper.helper.gen_rnd_int_text(1, 4)
+        term2 = helper.gen_rnd_int_text(1, 4)
 
     if coin_toss3 == 0:
         temp = term1

@@ -7,6 +7,7 @@ Methods to generate surd questions.
 
 from . import numbers_fractions_operators as helper 
 import numpy as np
+import random
 
 def gen_question_simplify_into_a_sqrt_b():
     simple_flag = random.randint(0, 1)
@@ -18,7 +19,7 @@ def gen_question_simplify_into_a_sqrt_b():
         prime_num = helper.gen_prime_less_than_ten()
         rootable_num = helper.gen_rootable_number()
         surd_num = prime_num * rootable_num
-    return gen_term_sqrt(surd_num)
+    return helper.gen_term_sqrt(surd_num)
 
 
 def gen_question_simplify_expression():

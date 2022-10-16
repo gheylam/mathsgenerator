@@ -42,24 +42,24 @@ def gen_question_std_form_addition():
     first_figure01 = random.randint(1, 9)
     figures01 = random.randint(1, 99)
     pow01 = random.randint(5, 15)
-    std_form_num01 = gen_std_form(first_figure01, figures01, convert_num_to_str(pow01))
+    std_form_num01 = gen_std_form(first_figure01, figures01, helper.convert_num_to_str(pow01))
     first_figure02 = random.randint(1, 9)
     figures02 = random.randint(1, 99999)
     pow02 = pow01 + random.randint(-3, 3)
-    std_form_num02 = gen_std_form(first_figure02, figures02, convert_num_to_str(pow02))
-    q = gen_add_expr(std_form_num01, std_form_num02)
+    std_form_num02 = gen_std_form(first_figure02, figures02, helper.convert_num_to_str(pow02))
+    q = helper.gen_add_expr(std_form_num01, std_form_num02)
     return rf"${q}$"
 
 def gen_question_std_form_subtraction():
     first_figure01 = random.randint(1, 9)
     figures01 = random.randint(1, 99)
     pow01 = random.randint(5, 15)
-    std_form_num01 = gen_std_form(first_figure01, figures01, convert_num_to_str(pow01))
+    std_form_num01 = gen_std_form(first_figure01, figures01, helper.convert_num_to_str(pow01))
     first_figure02 = random.randint(1, 9)
     figures02 = random.randint(1, 99999)
     pow02 = pow01 + random.randint(-3, 3)
-    std_form_num02 = gen_std_form(first_figure02, figures02, convert_num_to_str(pow02))
-    q = gen_sub_expr(std_form_num01, std_form_num02)
+    std_form_num02 = gen_std_form(first_figure02, figures02, helper.convert_num_to_str(pow02))
+    q = helper.gen_sub_expr(std_form_num01, std_form_num02)
     return rf"${q}$"
 
 
@@ -67,12 +67,12 @@ def gen_question_std_form_multiplication():
     first_figure01 = random.randint(1, 9)
     figures01 = random.randint(1, 9)
     pow01 = random.randint(5, 15)
-    std_form_num01 = gen_std_form(first_figure01, figures01, convert_num_to_str(pow01))
+    std_form_num01 = gen_std_form(first_figure01, figures01, helper.convert_num_to_str(pow01))
     first_figure02 = random.randint(1, 9)
     figures02 = random.randint(1, 9)
     pow02 = pow01 + random.randint(-3, 3)
-    std_form_num02 = gen_std_form(first_figure02, figures02, convert_num_to_str(pow02))
-    q = gen_mul_expr(std_form_num01, std_form_num02)
+    std_form_num02 = gen_std_form(first_figure02, figures02, helper.convert_num_to_str(pow02))
+    q = helper.gen_mul_expr(std_form_num01, std_form_num02)
     return rf"${q}$"
 
 
@@ -80,12 +80,12 @@ def gen_question_std_form_division():
     first_figure01 = random.randint(1, 9)
     figures01 = random.randint(1, 9)
     pow01 = random.randint(5, 15)
-    std_form_num01 = gen_std_form(first_figure01, figures01, convert_num_to_str(pow01))
+    std_form_num01 = gen_std_form(first_figure01, figures01, helper.convert_num_to_str(pow01))
     first_figure02 = random.randint(1, 2)
     figures02 = 0
     pow02 = pow01 + random.randint(-3, 3)
-    std_form_num02 = gen_std_form(first_figure02, figures02, convert_num_to_str(pow02))
-    q = gen_div_expr(std_form_num01, std_form_num02)
+    std_form_num02 = gen_std_form(first_figure02, figures02, helper.convert_num_to_str(pow02))
+    q = helper.gen_div_expr(std_form_num01, std_form_num02)
     return rf"${q}$"
 
 def gen_four_ordinary_to_std_form(doc):

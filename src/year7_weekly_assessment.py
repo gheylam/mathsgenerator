@@ -1,10 +1,6 @@
-from maths_generator.tsz_latex_generator import *
-from maths_generator.power_rules import *
-from maths_generator.negative_numbers import *
-from maths_generator.fractions import *
-from maths_generator.operators import *
+from math_generator import *
 
-doc = Doc('./year7_output/year7_weekly_assessment_week05.tex')
+doc = tsz_latex_generator.Doc('f:/Development/Maths_Generator/output/weekly_assessments/year7_output/year7_weekly_assessment_week06.tex')
 doc.erase()
 
 doc.add(r"\documentclass[12pt]{article}")
@@ -21,9 +17,13 @@ doc.add(r"\fancyhead[R]{\textbf{Mark:\hspace{2cm}}}")
 doc.add(r"\fancyfoot{} ")
 
 
-gen_section_negative_numbers(doc)
-gen_section_fractions(doc)
-gen_section_operators(doc)
+negative_numbers.gen_section_negative_numbers(doc)
+
+fraction_gen = fractions.Fraction_Generator(doc)
+fraction_gen.gen_three_ordering_fractions()
+fraction_gen.gen_eight_questions()
+operators.gen_section_operators(doc)
+rounding_and_approximation.gen_section_rounding(doc)
 
 
 doc.add(r"\end{document}")
