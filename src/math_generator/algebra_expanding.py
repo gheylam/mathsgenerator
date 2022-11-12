@@ -5,9 +5,8 @@ Created on: 12.11.2022
 Class for generating expanding bracket questions. 
 '''
 
-import numbers_fractions_operators as helper 
-import tsz_latex_generator as doc_gen
-import algebra_helpers 
+from . import numbers_fractions_operators as helper 
+from . import algebra_helpers 
 import random 
 
 class AlgebraExpandingGenerator:
@@ -48,7 +47,7 @@ class AlgebraExpandingGenerator:
         self.doc.add(r"\begin{tabular}{c c}")
         self.doc.add(r"\hspace{6cm} & \hspace{6cm}\\")
         self.doc.add(rf"a) {q1} & b) {q2}\\ \\")
-        self.doc.add(rf"d) {q3} & e) {q4}")
+        self.doc.add(rf"c) {q3} & d) {q4}")
         self.doc.add(r"\end{tabular}")
         self.doc.add(r"\end{table}")
         self.doc.add(r"\newline")
@@ -70,9 +69,3 @@ class AlgebraExpandingGenerator:
         self.doc.add(r"\end{tabular}")
         self.doc.add(r"\end{table}")
         self.doc.add(r"\newline")
-
-
-doc = doc_gen.Doc("./dummy_doc.tex")
-expandingGen = AlgebraExpandingGenerator(doc)
-expandingGen.gen_batch_single_brackets()
-expandingGen.gen_batch_double_brackets()

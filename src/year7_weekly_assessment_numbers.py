@@ -1,6 +1,6 @@
 from math_generator import *
 
-doc = tsz_latex_generator.Doc('f:/Development/Maths_Generator/output/weekly_assessments/year7_output/year7_weekly_assessment_week06.tex')
+doc = tsz_latex_generator.Doc('f:/Development/Maths_Generator/output/weekly_assessments/year7_output/year7_weekly_assessment_week07.tex')
 doc.erase()
 
 doc.add(r"\documentclass[12pt]{article}")
@@ -25,5 +25,9 @@ fraction_gen.gen_eight_questions()
 operators.gen_section_operators(doc)
 rounding_and_approximation.gen_section_rounding(doc)
 
+fpd_gen = fractions_percentages_decimals.Frac_Perc_Deci_Generator(doc)
+fpd_gen.gen_batch_fraction_conversion()
+fpd_gen.gen_batch_percentage_conversion()
+fpd_gen.gen_batch_fraction_and_percentage_operators()
 
 doc.add(r"\end{document}")

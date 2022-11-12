@@ -1,7 +1,7 @@
 from math_generator import *
 
 doc = tsz_latex_generator.Doc(
-    'f:/Development/Maths_Generator/output/weekly_assessments/year9_output/year9_weekly_assessment_week06.tex')
+    'f:/Development/Maths_Generator/output/weekly_assessments/year9_output/year9_weekly_assessment_week07.tex')
 doc.erase()
 
 doc.add(r"\documentclass[12pt]{article}")
@@ -32,6 +32,13 @@ standard_form.gen_section_standard_form(doc)
 doc.add_newpage()
 prime_factors_hcf_lcm.gen_section_prime_HCF_LCM(doc)
 surds.gen_section_surds(doc)
+
+fpd_gen = fractions_percentages_decimals.Frac_Perc_Deci_Generator(doc)
+fpd_gen.gen_batch_fraction_conversion()
+fpd_gen.gen_batch_percentage_conversion()
+fpd_gen.gen_batch_fraction_and_percentage_operators()
+interest_rate_gen = interest_rates.Interest_Rate_Generator(doc)
+interest_rate_gen.gen_batch_interest_rates()
 
 doc.add(r"\end{document}")
 print("[LOG] Generated year9 weekly assessment.")

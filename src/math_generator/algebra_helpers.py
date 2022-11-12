@@ -4,7 +4,7 @@ Created on: 12.11.2022
 
 Set of functions used for algebra type questions 
 '''
-import numbers_fractions_operators as helper 
+from . import numbers_fractions_operators as helper 
 import random 
 
 def gen_simplified_linear_expression(num_terms, constants_flag=True):

@@ -10,5 +10,9 @@ __all__ = [
     "standard_form",
     "surds",
     "fractions_percentages_decimals",
-    "interest_rates"
+    "interest_rates",
+    "algebra_simplifying",
+    "algebra_factorising",
+    "algebra_helpers",
+    "algebra_expanding"
 ]
