@@ -17,7 +17,7 @@ doc.add(r"\fancyhead[C]{\textbf{Date:\hspace{2cm}}}")
 doc.add(r"\fancyhead[R]{\textbf{Mark:\hspace{2cm}}}")
 doc.add(r"\fancyfoot{} ")
 
-# Generate the questions 
+# Generate the questions
 algebra_simplifying_gen = algebra_simplifying.AlgebraSimplifyGenerator(doc)
 algebra_simplifying_gen.gen_batch_linear()
 algebra_simplifying_gen.gen_batch_non_linear()

@@ -14,5 +14,6 @@ __all__ = [
     "algebra_simplifying",
     "algebra_factorising",
     "algebra_helpers",
-    "algebra_expanding"
+    "algebra_expanding",
+    "geometry_transformations"
 ]
